@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .swiper-container{
+            width: 500px;
+            height: 300px
+        }
+        .swiper-slide img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide "><img src="images/1.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="images/2.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="images/3.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="images/1.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="images/2.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="images/3.jpg" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev bg-none">
+        <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="swiper-button-next bg-none">
+        <i class="fa fa-angle-right text-top"></i>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    new Swiper('.swiper-container',{
+        autoplay:1000,
+        loop:true,
+        autoplayDisableOnInteraction:false,
+        pagination:'.swiper-pagination',
+        paginationClickable:true,
+        /*prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',*/
+         effect:"coverflow",
+        keyboardControl:true,
+        mousewheelControl:true,
+        direction : 'vertical'
+       /* slidesPerview:3,
+        slidesPerGroup:3*/
+
+    })
+</script>
+</body>
+</html>
